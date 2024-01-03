@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: #002734;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #A9A9A9;
+}
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
+/* .selecteeeborder .MuiOutlinedInput-notchedOutline {
+border-color: #eeeeee !important;
+} */
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.2em;
+  display: block;
+}
