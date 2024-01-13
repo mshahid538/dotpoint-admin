@@ -1,4 +1,5 @@
-export const BaseUrl = "https://dotpoint.api.webisheet.com/";
+// export const BaseUrl = "https://dotpoint.api.webisheet.com/";
+export const BaseUrl = "http://localhost:4000/";
 
 // export const ApiUrlPersona = "persona/";
 export const versionControl = "v1/";
@@ -33,6 +34,10 @@ export const api = {
   deleteCurrency: "admin/currency_list",
   listCurrency: "admin/currency_list/get",
   uploadImg: "upload/image/attachment",
+
+  getCoupon: "admin/coupon",
+  addCoupon: "admin/coupon",
+  updateCoupon: "admin/coupon",
 
   getPayout: "admin/profit_withdrawal/get",
   addPayout: "admin/profit_withdrawal/approval",

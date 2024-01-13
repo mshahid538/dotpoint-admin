@@ -125,6 +125,28 @@ export const ApiPutNoAuth = (endUrl: any, userData: any) => {
   });
 };
 
+export const ApiPatchNoAuth = (endUrl: any, userData: any) => {
+  return new Promise((resolve, reject) => {
+    apiInstance
+      .patch(endUrl, userData)
+      .then((responseJson) => {
+        resolve(responseJson);
+      })
+      .catch((error) => {
+        if (
+          error?.hasOwnProperty("response") &&
+          error?.response?.hasOwnProperty("data") &&
+          error?.response?.data?.hasOwnProperty("error") &&
+          error?.response?.data?.error
+        ) {
+          reject(error?.response?.data);
+        } else {
+          reject(error?.response);
+        }
+      });
+  });
+};
+
 export const ApiDeleteNoAuth = (endUrl: any, body?: any) => {
   return new Promise((resolve, reject) => {
     apiInstance
